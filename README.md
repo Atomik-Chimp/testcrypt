@@ -7,15 +7,19 @@ I'm also working on improving my readme and documentation skills.
 What I have learned to get projects up and started nicely with Github:
 
 Step 1: Create the blank project on Github. I use the name of the directory for the project name.
+	
 	1a: I didn't automatically make a readme or a .gitignore.
 
 Step 2: Create the local directory and clone the blank Github project to that directory.
+	
 	2a: I'm working with gitextensions, when I define the location there it will make the base folder, so for example it will make the /testcrypt/ folder where every you set the location.
 
 Step 3: Create the Readme.md and .gitignore files in the directory. Then commit these new files to the project.
+	
 	3a: I coppied these files from a previous project to the /testcrypt/ directory, then used the committ button in gitextensions.
 
 Step 4: I'm working in Visual C++ so I have .gitignored non-source Visual C++ files, I create the new Visual Studio Project, pointing to the directory above the Project folder.  That way Visual C++ doesn't create another folder of the same name inside my folder for it's files, it just uses my folder.
+	
 	4a: I made the new project, and chose a console application and precompiled headers.
 
 Step 5: Work on your project files and commit them to the project.  
