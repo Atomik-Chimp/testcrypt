@@ -21,32 +21,32 @@ void decrypt();
 
 int _tmain(int argc, _TCHAR* argv[]){
 	cout << "\nENTER FIRST PRIME NUMBER\n";
-	cin >> p;
-	flag = prime(p);
-	if (flag == 0){
+	cin >> p;			// read in a prime number
+	flag = prime(p);	// check to make sure it is prime
+	if (flag == 0){		// If it's not prime, exit
 		cout << "\nWRONG INPUT\n";
 		exit(1);
 	}
 	cout << "\nENTER ANOTHER PRIME NUMBER\n";
-	cin >> q;
-	flag = prime(q);
-	if (flag == 0 || p == q){
+	cin >> q;			// read in the second prime number
+	flag = prime(q);	// check to make sure it is prime
+	if (flag == 0 || p == q){	// If it's nor prime exit
 		cout << "\nWRONG INPUT\n";
 		exit(1);
 	}
 	cout << "\nENTER MESSAGE\n";
 	fflush(stdin);
-	cin >> msg;
-	for (i = 0; msg[i] != '\0'; i++)
+	cin >> msg;		// read in the message to encrypt
+	for (i = 0; msg[i] != '\0'; i++)	// copy the message string (now msg = m)
 		m[i] = msg[i];
-	n = p * q;
-	t = (p - 1) * (q - 1);
-	ce();
+	n = p * q;		// calculate the sum of the two prime numbers
+	t = (p - 1) * (q - 1);	// calculates t (the product of one less of each prime?)
+	ce();			//  What's ce()?  
 	cout << "\nPOSSIBLE VALUES OF e AND d ARE\n";
 	for (i = 0; i < j - 1; i++)
 		cout << e[i] << "\t" << d[i] << "\n";
 
-	cout << "Before Encrypt\n";
+	// cout << "Before Encrypt\n";
 	encrypt();
 	cout << "After Encrypt\n";
 	cin >> p;
