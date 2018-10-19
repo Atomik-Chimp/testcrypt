@@ -3,21 +3,19 @@
 
 #include "stdafx.h"
 
-#include<iostream>
-#include<math.h>
-#include<string.h>
-#include<stdlib.h>
+
 
 /* C++ Program to Implement the RSA Algorithm */
 using namespace std;
 	
-long int p, q, n, t, flag, e[100], d[100], temp[100], j, m[100], en[100], i;
+long int p, q;	// the two prime numbers of the key
+long int n, t, flag, e[100], d[100], temp[100], j, m[100], en[100], i;
 char msg[100];
-int prime(long int);
+int prime(long int);	// tests to see if input is a prime
 void ce();
 long int cd(long int);
-void encrypt();
-void decrypt();
+void encrypt();			// encrypts the string
+void decrypt();			// decrypts the string
 
 int _tmain(int argc, _TCHAR* argv[]){
 	cout << "\nENTER FIRST PRIME NUMBER\n";

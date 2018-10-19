@@ -10,6 +10,10 @@
 #include <stdio.h>
 #include <tchar.h>
 
-
+// Justin For testcrypt
+#include<iostream>
+#include<math.h>
+#include<string.h>
+#include<stdlib.h>
 
 // TODO: reference additional headers your program requires here
